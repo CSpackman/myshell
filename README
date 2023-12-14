@@ -1,0 +1,2 @@
+A basic shell built with C. Includes  signal blocking, pipilining, custom CD command, and 
+support for file rederection for standard in and out.
