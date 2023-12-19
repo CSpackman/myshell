@@ -37,9 +37,9 @@ int main(int argc, char * argv[]) {
       exit(1);
       // Failed to Open file
     }
-    longString = readLongString(fp); //A function written by my proffessor. Reads a string of any length into a buffer. Stop at EOF or \n.
+    longString = readLongString(fp); //A function written by my proffessor. Reads a string of any length into a buffer. Stops at EOF or \n.
     if (NULL != longString) {
-      outPipeline = crack_pipeline(longString); //Returns a list of structs that contain each command. Also written by proffessor 
+      outPipeline = crack_pipeline(longString); //Returns a list of structs that contain each command. Also written by proffessor. 
       if (outPipeline != NULL) {
         forkData(outPipeline);
         free_pipeline(outPipeline); //Frees pipeline mem. Also written by proffessor 
